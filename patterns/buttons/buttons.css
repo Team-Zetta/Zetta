@@ -6,7 +6,35 @@ html {
 .btn-temp {
   color: #000;
   background-color: #fff;
-  border: 1px solid #000;
-  border-radius: 20px;
-  font-weight: bold;
+  border: 1px solid #fff;
+  margin: none;
+  border-radius: 0;
+}
+
+.btn-temp:hover {
+  background-color: none;
+  border: 1px solid #fff;
+}
+
+.btn-left {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.btn-right {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.btn-large {
+  padding-right: 15em;
+  padding-left: 15em;
+  border-radius: 25px;
+}
+
+.btn-whole {
+  background-color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 25px;
 }
