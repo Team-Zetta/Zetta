@@ -41,17 +41,26 @@ body {
   left: 115%;
   transform: translate(-50%, -50%);
 }
-
 .h1 {
   font-size: 15em;
   color: #fff;
-  margin-top: 210px;
+  line-height: 1em;
 }
 
 .main-info {
   color: #fff;
   padding-top: 70px;
   font-weight: 100;
+  max-width: 500px;
+  margin: auto;
+}
+
+.main-info dt {
+  width: 6.5em;
+}
+
+.main-info dd {
+  min-width: 2em;
 }
 
 .arrow {
@@ -63,6 +72,9 @@ body {
   font-weight: 100;
 }
 
+.big-screen{
+  display: none;
+}
 
 @media only screen and (min-width: 25em) {
 
@@ -77,6 +89,14 @@ body {
   .search-icon {
     left: 109%;
     max-width: 35px;
+  }
+
+  .small-screen{
+    display: none;
+  }
+
+  .big-screen{
+    display: block;
   }
 
 }
