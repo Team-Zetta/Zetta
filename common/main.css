@@ -41,6 +41,7 @@ body {
   left: 115%;
   transform: translate(-50%, -50%);
 }
+
 .h1 {
   font-size: 15em;
   color: #fff;
@@ -61,6 +62,7 @@ body {
   color: #fff;
   font-weight: 100;
 }
+
 
 @media only screen and (min-width: 25em) {
 

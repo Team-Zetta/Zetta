@@ -5,63 +5,51 @@
     <link href="common/modules.css" rel="stylesheet">
     <link href="common/grid.css" rel="stylesheet">
     <link href="common/type.css" rel="stylesheet">
-    <title>Web app</title>
+    <link href="common/main.css" rel="stylesheet">
+    <link href="patterns/buttons/buttons.css" rel="stylesheet">
+    <title>Rapid Forecast</title>
   </head>
   <body>
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <title>Rapid Forecast</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link href="css/modules.css" rel="stylesheet">
-        <link href="css/grid.css" rel="stylesheet">
-        <link href="css/type.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
-      </head>
-      <body>
+    <header>
+      <div class="wrap">
+        <div class="search">
+          <input type="text" class="search-term micro island-1-2" placeholder="Search Location">
+        </div>
+        <div>
+          <img class="search-icon" src="placeholder-circle.svg" alt="">
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="grid">
+        <div class="unit xs-1 s-1 m-1 l-1">
+          <h1 class="h1 text-center push-2">5°</h1>
+        </div>
 
-        <header>
-          <div class="wrap">
-            <div class="search">
-              <input type="text" class="search-term micro island-1-2" placeholder="Search Location">
+        <div class="push-2 unit xs-1 s-1 m-1 l-1 text-center">
+
+            <div class="btn-whole">
+              <a class="push-none btn btn-temp btn-left" href="#">C</a>
+              <a class="push-none btn btn-temp btn-right " href="#">F</a>
             </div>
-            <div>
-              <img class="search-icon" src="placeholder-circle.svg" alt="">
-            </div>
-          </div>
-        </header>
 
-        <main>
-          <div class="c-f">
-          </div>
-
-          <div class="">
-            <h1 class="h1 text-center push-2">5</h1>
-          </div>
-
-          <div class="push-2">
-            <dl class="main-info text-center">
-              <dt>Precipitation:</dt>
-              <dd><data value="2 %">2%</data></dd>
-              <dt>Humidity:</dt>
-              <dd><data value="8 %">8%</data></dd>
-              <dt>Wind:</dt>
-              <dd><data value="2 km/h">2 km/h</data></dd>
-            </dl>
-          </div>
-
-          <div class="text-center">
-            <img class="arrow" src="placeholder-16by9.svg" alt="">
-          </div>
-
-          <footer class="text-center">
-            <p class="rapid-forcast milli island-2">© Rapid Forcast</p>
-          </footer>
-        </main>
-
-      </body>
-    </html>
+          <dl class="main-info">
+            <dt>Precipitation:</dt>
+            <dd><data value="2 %">2%</data></dd>
+            <dt>Humidity:</dt>
+            <dd><data value="8 %">8%</data></dd>
+            <dt>Wind:</dt>
+            <dd><data value="2 km/h">2 km/h</data></dd>
+          </dl>
+        </div>
+      </div>
+      <div class="text-center">
+        <img class="arrow" src="placeholder-16by9.svg" alt="">
+      </div>
+    </main>
+    <footer class="text-center">
+      <p class="rapid-forcast milli island-2">© Rapid Forcast</p>
+    </footer>
 
   </body>
 </html>
