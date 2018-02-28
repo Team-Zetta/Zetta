@@ -1,0 +1,89 @@
+html {
+  font-family: sans-serif;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background-color: #212121;
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.search-term {
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  background-color: #212121;
+  color: #fff;
+}
+
+.search-term:focus{
+  color: #fff;
+}
+
+.wrap{
+  width: 70%;
+  position: absolute;
+  top: 5%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+}
+
+.search-icon {
+  max-width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 115%;
+  transform: translate(-50%, -50%);
+}
+.h1 {
+  font-size: 15em;
+  color: #fff;
+  margin-top: 210px;
+}
+
+.main-info {
+  color: #fff;
+  padding-top: 70px;
+  font-weight: 100;
+}
+
+.arrow {
+  max-width: 70px;
+}
+
+.rapid-forcast {
+  color: #fff;
+  font-weight: 100;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .search-icon {
+    left: 110%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .search-icon {
+    left: 109%;
+    max-width: 35px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .search-icon {
+    left: 107%;
+    max-width: 40px;
+  }
+
+}
