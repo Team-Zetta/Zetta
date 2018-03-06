@@ -76,6 +76,19 @@ body {
   display: none;
 }
 
+.left-arrow,
+.right-arrow {
+  max-height: 70px;
+}
+
+.left-arrow {
+  float: left;
+}
+
+.right-arrow {
+  float: right;
+}
+
 @media only screen and (min-width: 25em) {
 
   .search-icon {
