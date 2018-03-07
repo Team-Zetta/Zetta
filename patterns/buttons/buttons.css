@@ -12,7 +12,7 @@ html {
 
 .btn-temp:focus {
   background-color: none;
-  border: .5px solid transparent;
+  border: none;
   background-color: transparent;
   margin: none;
 }
