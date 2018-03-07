@@ -10,6 +10,13 @@ html {
   margin: none;
 }
 
+.btn-temp:focus {
+  background-color: none;
+  border: none;
+  background-color: transparent;
+  margin: none;
+}
+
 .btn-whole {
   background-color: transparent;
   border: .5px solid #fff;
