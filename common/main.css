@@ -45,6 +45,7 @@ body {
   font-size: 15em;
   color: #fff;
   line-height: 1em;
+  font-weight: lighter;
 }
 
 .main-info {
@@ -61,6 +62,24 @@ body {
 
 .main-info dd {
   min-width: 2em;
+}
+
+.more-info dt {
+  width: 6.5em;
+}
+
+.more-info dd {
+  min-width: 2em;
+}
+
+.more-info {
+  color: #fff;
+  max-width: 500px;
+  margin: auto;
+}
+
+.info more-info {
+  display: inline-block;
 }
 
 .arrow {
@@ -115,7 +134,7 @@ body {
 }
 
 .check:checked ~ .label {
-  transform: rotate(180deg) scale(1.5);
+  transform: rotate(180deg);
   transition: transform 200ms ease;
 }
 
