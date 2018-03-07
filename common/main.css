@@ -6,13 +6,6 @@ html {
   background-repeat: no-repeat;
 }
 
-body {
-  background-image: url("../images/bg-1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: "Roboto", sans-serif;
-}
 
 .search {
   width: 100%;
