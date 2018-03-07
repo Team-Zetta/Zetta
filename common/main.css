@@ -1,29 +1,29 @@
 html {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
 body {
-  background-color: #212121;
+  background-image: url("../images/bg-1.jpg");
+  background-position: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .search {
   width: 100%;
-  position: relative
+  position: relative;
 }
 
 .search-term {
   width: 100%;
   border: 1px solid #fff;
   border-radius: 20px;
-  outline: none;
-  background-color: #212121;
+  background-color: transparent;
   color: #fff;
 }
 
 .search-term:focus{
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 .wrap{
@@ -76,9 +76,14 @@ body {
   display: none;
 }
 
-.left-arrow,
+.left-arrow {
+  max-height: 70px;
+  transform: rotate(90deg);
+}
+
 .right-arrow {
   max-height: 70px;
+  transform: rotate(270deg);
 }
 
 .left-arrow {
