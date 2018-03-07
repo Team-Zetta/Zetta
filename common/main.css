@@ -45,6 +45,7 @@ body {
   font-size: 15em;
   color: #fff;
   line-height: 1em;
+  font-weight: 900;
 }
 
 .main-info {
@@ -131,6 +132,14 @@ body {
 
 .info {
   background-color: var(--color-neutral-beige);
+}
+
+.main-info dt {
+  font-weight: 100;
+}
+
+.main-info dd {
+  font-weight: 900;
 }
 
 @media only screen and (min-width: 25em) {
