@@ -1,7 +1,3 @@
-html {
-  font-family: sans-serif;
-  background-color: #000;
-}
 
 .btn-temp:hover {
   background-color: none;
@@ -53,8 +49,6 @@ html {
 
 .btn-large {
   width: 70%;
-  padding-right: 16em;
-  padding-left: 16em;
   border-radius: 25px;
   color: #000;
   background-color: #fff;
