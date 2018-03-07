@@ -49,7 +49,7 @@ body {
 
 .main-info {
   color: #fff;
-  padding-top: 70px;
+  padding-top: 30px;
   font-weight: 100;
   max-width: 500px;
   margin: auto;
@@ -154,6 +154,10 @@ body {
 
   .big-screen{
     display: block;
+  }
+
+  .box {
+    padding-top: 95px;
   }
 
 }
