@@ -1,5 +1,9 @@
 html {
   font-family: "Roboto", sans-serif;
+  background-image: url("../images/bg-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body {
@@ -201,7 +205,6 @@ body {
   }
 
   .main-info {
-
     max-width: 300px;
 
   }
