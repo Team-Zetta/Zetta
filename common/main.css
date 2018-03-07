@@ -176,13 +176,6 @@ body {
     max-width: 35px;
   }
 
-  .small-screen{
-    display: none;
-  }
-
-  .big-screen{
-    display: block;
-  }
 
   .box {
     padding-top: 95px;
@@ -192,9 +185,23 @@ body {
 
 @media only screen and (min-width: 60em) {
 
+  .small-screen {
+    display: none;
+  }
+
+  .big-screen {
+    display: block;
+  }
+
   .search-icon {
     left: 107%;
     max-width: 40px;
+  }
+
+  .main-info {
+
+    max-width: 300px;
+
   }
 
 }
