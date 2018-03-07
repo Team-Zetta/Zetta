@@ -19,9 +19,10 @@ body {
   border-radius: 20px;
   background-color: transparent;
   color: #fff;
+  font-weight: 300;
 }
 
-.search-term:focus{
+.search-term:focus {
   background-color: #fff;
   color: #000;
 }
