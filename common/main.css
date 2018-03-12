@@ -1,14 +1,11 @@
 html {
   font-family: "Roboto", sans-serif;
-}
-
-body {
   background-image: url("../images/bg-1.jpg");
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  font-family: "Roboto", sans-serif;
+  background-repeat: no-repeat;
 }
+
 
 .search {
   width: 100%;
@@ -201,7 +198,6 @@ body {
   }
 
   .main-info {
-
     max-width: 300px;
 
   }
