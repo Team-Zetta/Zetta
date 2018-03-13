@@ -160,6 +160,17 @@ html {
   font-weight: 900;
 }
 
+.carousel-items > div {
+display: none;
+}
+
+#c-control:checked ~ .carousel-inner #c,
+#f-control:checked ~ .carousel-inner #f,
+#hourly-control:checked ~ .carousel-inner #hourly,
+#weekly-control:checked ~ .carousel-inner #weekly, {
+  display: block;
+}
+
 @media only screen and (min-width: 25em) {
 
   .search-icon {
@@ -175,14 +186,9 @@ html {
     max-width: 35px;
   }
 
-
   .box {
     padding-top: 95px;
   }
-
-}
-
-@media only screen and (min-width: 60em) {
 
   .small-screen {
     display: none;
@@ -191,6 +197,10 @@ html {
   .big-screen {
     display: block;
   }
+
+}
+
+@media only screen and (min-width: 60em) {
 
   .search-icon {
     left: 107%;

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <<meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="common/modules.css" rel="stylesheet">
     <link href="common/grid.css" rel="stylesheet">
     <link href="common/type.css" rel="stylesheet">
@@ -17,103 +17,111 @@
         <div class="search">
           <input type="text" class="search-term micro island-1-2" placeholder="Search Location">
         </div>
-
         <div>
           <img class="search-icon" src="images/location-icon.svg" alt="">
         </div>
-
       </div>
     </header>
-    <main class="island-2 grid wrapper">
-      <div class="unit xs-1 s-1 m-1 l-1 content">
-      <div class="grid">
-        <div class="unit xs-1 s-1 m-1-2 pad-t-2">
-          <h1 class="h1 text-center not-bold"><strong>5</strong>°</h1>
-        </div>
-        <div class="box unit xs-1 s-1 m-1-2 push-2 text-center">
-          <div class="btn-whole">
-            <a class="push-none btn btn-temp btn-left" href="#">C</a>
-            <a class="push-none btn btn-temp btn-right" href="#">F</a>
-          </div>
-          <div class="text-center">
-            <dl class="main-info list-group-inline text-center">
-              <dt class="giga">Precipitation:</dt>
-              <dd class="giga"><data value="2 %">2%</data></dd>
-              <dt class="giga">Humidity:</dt>
-              <dd class="giga"><data value="8 %">8%</data></dd>
-              <dt class="giga">Wind:</dt>
-              <dd class="giga"><data value="2 km/h">2 km/h</data></dd>
-            </dl>
-          </div>
-        </div>
-      </div>
+    <main class="island-2 grid wrapper carousel">
 
-      <div>
-      <div class="text-center info small-screen">
-        <input type="checkbox" class="check" id="check">
-        <label class="label arrow-icon island-1-2" for="check">
-          <i class="icon i-64">
-            <img src="images/arrow.svg" alt="Open read more">
-          </i>
-        </label>
-        <div class="read-more main-info list-group-inline text-center">
-          <div class="btn-whole push">
-            <a class="push-none btn btn-temp btn-left" href="#">Hourly</a>
-            <a class="push-none btn btn-temp btn-right" href="#">Weekly</a>
-          </div>
-            <dl class="gutter list-group-inline">
-              <dt class="bold mega">Now</dt>
-              <dd class="push-1-4 mega">5°</dd>
-              <dt class="bold mega">1pm</dt>
-              <dd class="push-1-4 mega">6°</dd>
-              <dt class="bold mega">2pm</dt>
-              <dd class="push-1-4 mega">7°</dd>
-              <dt class="bold mega">3pm</dt>
-              <dd class="push-1-4 mega">8°</dd>
-              <dt class="bold mega">4mp</dt>
-              <dd class="push-1-4 mega">7°</dd>
-              <dt class="bold mega">5pm</dt>
-              <dd class="push-1-4 mega">6°</dd>
-              <dt class="bold mega">6pm</dt>
-              <dd class="push-1-4 mega">5°</dd>
-              <dt class="bold mega">7pm</dt>
-              <dd class="push-1-4 mega">4°</dd>
-              <dt class="bold mega">8pm</dt>
-              <dd class="push-1-4 mega">3°</dd>
-            </dl>
-          </div>
-      </div>
-    </div>
+      <input class="carousel-input" type="radio" name="pages" id="c-control" checked>
+      <input class="carousel-input" type="radio" name="pages" id="f-control">
+      <input class="carousel-input" type="radio" name="pages" id="hourly-control">
+      <input class="carousel-input" type="radio" name="pages" id="weekly-control">
 
-      <div class="big-screen text-center">
-        <div class="hourly">
-          <div>
-            <a class="btn-temp-2 header-large" href="#">Hourly</a>
-          </div>
-          <div>
-            <i class="icon i-64">
-              <img class="left-arrow" src="images/arrow.svg" alt="">
-            </i>
-            <i class="icon i-64">
-              <img class="right-arrow" src="images/arrow.svg" alt="">
-            </i>
-          </div>
-        </div>
-        <div class="weekly">
-          <div>
-            <a class="btn-temp-2 header-large" href="#">Weekly</a>
+      <div class="carousel-inner relative">
+        <div class="carousel-items">
+
+          <div class="carousel-item unit xs-1 s-1 m-1 l-1 content">
+            <div class="grid">
+              <div class="unit xs-1 s-1 m-1-2 pad-t-2">
+                <h1 class="h1 text-center not-bold"><strong>5</strong>°</h1>
+              </div>
+              <div class="box unit xs-1 s-1 m-1-2 push-2 text-center">
+                <div class="btn-whole">
+                  <label class="push-none btn btn-temp btn-left" for="c-control">C</label>
+                  <label class="push-none btn btn-temp btn-right" for="f-control">F</label>
+                </div>
+                <div class="text-center">
+                  <dl class="main-info list-group-inline text-center">
+                    <dt class="giga">Precipitation:</dt>
+                    <dd class="giga"><data value="2 %">2%</data></dd>
+                    <dt class="giga">Humidity:</dt>
+                    <dd class="giga"><data value="8 %">8%</data></dd>
+                    <dt class="giga">Wind:</dt>
+                    <dd class="giga"><data value="2 km/h">2 km/h</data></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
             <div>
-              <i class="icon i-64">
-                <img class="left-arrow" src="images/arrow.svg" alt="">
-              </i>
-              <i class="icon i-64">
-                <img class="right-arrow" src="images/arrow.svg" alt="">
-              </i>
+            <div class="text-center info small-screen">
+              <input type="checkbox" class="check" id="check">
+              <label class="label arrow-icon island-1-2" for="check">
+                <i class="icon i-64">
+                  <img src="images/arrow.svg" alt="Open read more">
+                </i>
+              </label>
+              <div class="read-more main-info list-group-inline text-center">
+                <div class="btn-whole push">
+                  <label class="push-none btn btn-temp btn-left" for="hourly-control">Hourly</label>
+                  <label class="push-none btn btn-temp btn-right" for="weekly-control">Weekly</label>
+                </div>
+                  <dl class="gutter list-group-inline">
+                    <dt class="bold mega">Now</dt>
+                    <dd class="push-1-4 mega">5°</dd>
+                    <dt class="bold mega">1pm</dt>
+                    <dd class="push-1-4 mega">6°</dd>
+                    <dt class="bold mega">2pm</dt>
+                    <dd class="push-1-4 mega">7°</dd>
+                    <dt class="bold mega">3pm</dt>
+                    <dd class="push-1-4 mega">8°</dd>
+                    <dt class="bold mega">4mp</dt>
+                    <dd class="push-1-4 mega">7°</dd>
+                    <dt class="bold mega">5pm</dt>
+                    <dd class="push-1-4 mega">6°</dd>
+                    <dt class="bold mega">6pm</dt>
+                    <dd class="push-1-4 mega">5°</dd>
+                    <dt class="bold mega">7pm</dt>
+                    <dd class="push-1-4 mega">4°</dd>
+                    <dt class="bold mega">8pm</dt>
+                    <dd class="push-1-4 mega">3°</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="big-screen text-center">
+              <div class="hourly">
+                <div>
+                  <a class="btn-temp-2 header-large" href="#">Hourly</a>
+                </div>
+                <div>
+                  <i class="icon i-64">
+                    <img class="left-arrow" src="images/arrow.svg" alt="">
+                  </i>
+                  <i class="icon i-64">
+                    <img class="right-arrow" src="images/arrow.svg" alt="">
+                  </i>
+                </div>
+              </div>
+              <div class="weekly">
+                <div>
+                  <a class="btn-temp-2 header-large" href="#">Weekly</a>
+                  <div>
+                    <i class="icon i-64">
+                      <img class="left-arrow" src="images/arrow.svg" alt="">
+                    </i>
+                    <i class="icon i-64">
+                      <img class="right-arrow" src="images/arrow.svg" alt="">
+                    </i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
-    </div>
 
     </main>
 
