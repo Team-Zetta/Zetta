@@ -7,6 +7,10 @@
   transition: 0.25s;
 }
 
+.btn-temp {
+  font-weight: 400;
+}
+
 .btn-temp:focus {
   background-color: none;
   border: none;
