@@ -28,19 +28,20 @@ html {
 }
 
 .wrap{
-  width: 70%;
+  width: 100%;
+  max-width: 20em;
   position: absolute;
   top: 5%;
-  left: 43%;
-  transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding-right: 3em;
 }
 
 .search-icon {
   max-width: 30px;
   position: absolute;
-  top: 50%;
-  left: 115%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  right: 0;
 }
 .h1 {
   font-size: 15em;
@@ -162,29 +163,31 @@ html {
 }
 
 .carousel-items > div {
-display: none;
+  display: none;
 }
 
 #c-control:checked ~ .carousel-inner #c,
 #f-control:checked ~ .carousel-inner #f,
 #hourly-control:checked ~ .carousel-inner #hourly,
-#weekly-control:checked ~ .carousel-inner #weekly, {
+#weekly-control:checked ~ .carousel-inner #weekly {
   display: block;
 }
 
-@media only screen and (min-width: 25em) {
+.long-temp {
+  color: #fff;
+}
 
-  .search-icon {
-    left: 110%;
-  }
-
+#back-control:checked ~ .carousel-inner #back,
+#forward-control:checked ~ .carousel-inner #forward {
+  display: block;
 }
 
 @media only screen and (min-width: 38em) {
 
-  .search-icon {
-    left: 109%;
-    max-width: 35px;
+  .wrap{
+    width: 100%;
+    max-width: 36em;
+
   }
 
   .box {
@@ -202,11 +205,6 @@ display: none;
 }
 
 @media only screen and (min-width: 60em) {
-
-  .search-icon {
-    left: 107%;
-    max-width: 40px;
-  }
 
   .main-info {
     max-width: 300px;

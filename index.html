@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <div class="wrap">
+      <div class="wrap center-block">
         <div class="search">
           <input type="text" class="search-term micro island-1-2" placeholder="Search Location">
         </div>
@@ -29,8 +29,8 @@
       <input class="carousel-input" type="radio" name="pages" id="hourly-control">
       <input class="carousel-input" type="radio" name="pages" id="weekly-control">
 
-      <div class="carousel-inner relative">
-        <div class="carousel-items">
+      <div class="carousel-inner relative center-block">
+        <div class="">
 
           <div class="carousel-item unit xs-1 s-1 m-1 l-1 content">
             <div class="grid">
@@ -76,7 +76,7 @@
                     <dd class="push-1-4 mega">7°</dd>
                     <dt class="bold mega">3pm</dt>
                     <dd class="push-1-4 mega">8°</dd>
-                    <dt class="bold mega">4mp</dt>
+                    <dt class="bold mega">4pm</dt>
                     <dd class="push-1-4 mega">7°</dd>
                     <dt class="bold mega">5pm</dt>
                     <dd class="push-1-4 mega">6°</dd>
@@ -90,31 +90,144 @@
                 </div>
               </div>
             </div>
+
+
             <div class="big-screen text-center">
-              <div class="hourly">
-                <div>
-                  <a class="btn-temp-2 header-large" href="#">Hourly</a>
-                </div>
-                <div>
-                  <i class="icon i-64">
-                    <img class="left-arrow" src="images/arrow.svg" alt="">
-                  </i>
-                  <i class="icon i-64">
-                    <img class="right-arrow" src="images/arrow.svg" alt="">
-                  </i>
-                </div>
+              <div class="pad-b-2">
+                <a class="btn-temp-2 header-large" href="#">Hourly</a>
               </div>
-              <div class="weekly">
-                <div>
-                  <a class="btn-temp-2 header-large" href="#">Weekly</a>
-                  <div>
-                    <i class="icon i-64">
-                      <img class="left-arrow" src="images/arrow.svg" alt="">
-                    </i>
-                    <i class="icon i-64">
+              <div class="hourly carousel">
+                <input class="carousel-input" type="radio" name="weather" id="back-control" checked>
+                <input class="carousel-input" type="radio" name="weather" id="forward-control">
+
+
+
+                <div class="inline-block grid carousel-inner relative">
+
+                  <div class="carousel-controls unit xs-1 s-1 m-1-4 l-1-4">
+                    <label class="carousel-btn" for="back-control">
+                      <i class="icon i-48">
+                        <img class="left-arrow" src="images/arrow.svg" alt="">
+                      </i>
+                    </label>
+                  </div>
+
+                  <dl class="gutter carousel-items long-temp unit xs-1 s-1 m-1-2 l-1-2">
+
+                    <div class="carousel-item" id="back">
+                      <div class="inline-block">
+                        <dt class="milli">Now</dt>
+                        <dd class="push-1-4 mega">5°</dd>
+                      </div>
+                      <div class="inline-block">
+                        <dt class="milli">1pm</dt>
+                        <dd class="push-1-4 mega">6°</dd>
+                      </div>
+                      <div class="inline-block">
+                        <dt class="milli">2pm</dt>
+                        <dd class="push-1-4 mega">7°</dd>
+                      </div>
+                      <div class="inline-block">
+                        <dt class="milli">3pm</dt>
+                        <dd class="push-1-4 mega">8°</dd>
+                      </div>
+                      <div class="inline-block">
+                        <dt class="milli">4pm</dt>
+                        <dd class="push-1-4 mega">7°</dd>
+                      </div>
+                      <div class="inline-block">
+                        <dt class="milli">5pm</dt>
+                        <dd class="push-1-4 mega">6°</dd>
+                      </div>
+                    </div>
+
+                  <div class="carousel-item" id="forward">
+                    <div class="inline-block">
+                      <dt class="milli">6pm</dt>
+                      <dd class="push-1-4 mega">5°</dd>
+                    </div>
+                    <div class="inline-block">
+                      <dt class="milli">7pm</dt>
+                      <dd class="push-1-4 mega">4°</dd>
+                    </div>
+                    <div class="inline-block">
+                      <dt class="milli">8pm</dt>
+                      <dd class="push-1-4 mega">3°</dd>
+                    </div>
+                    <div class="inline-block">
+                      <dt class="milli">9pm</dt>
+                      <dd class="push-1-4 mega">3°</dd>
+                    </div>
+                    <div class="inline-block">
+                      <dt class="milli">10pm</dt>
+                      <dd class="push-1-4 mega">6°</dd>
+                    </div>
+                    <div class="inline-block">
+                      <dt class="milli">11pm</dt>
+                      <dd class="push-1-4 mega">6°</dd>
+                    </div>
+                  </div>
+                  </dl>
+
+                <div class="carousel-controls unit xs-1 s-1 m-1-4 l-1-4">
+                  <label class="carousel-btn" for="forward-control">
+                    <i class="icon i-48">
                       <img class="right-arrow" src="images/arrow.svg" alt="">
                     </i>
+                  </label>
+                </div>
+
+                </div>
+
+              </div>
+
+
+
+
+
+              <div class="weekly">
+                <div class="pad-b-2">
+                  <a class="btn-temp-2 header-large" href="#">Weekly</a>
+                </div>
+                <div class="inline-block grid">
+                  <i class="icon i-48 unit xs-1 s-1 m-1-4 l-1-4">
+                    <img class="left-arrow" src="images/arrow.svg" alt="">
+                  </i>
+                  <div class="long-temp unit xs-1 s-1 m-1-2 l-1-2">
+                  <dl class="gutter">
+
+                    <div>
+                    <div class="inline-block">
+                    <dt class="milli">Mon</dt>
+                    <dd class="push-1-4 mega">5°</dd>
+                    </div>
+                    <div class="inline-block">
+                    <dt class="milli">Tues</dt>
+                    <dd class="push-1-4 mega">6°</dd>
+                    </div>
+                    <div class="inline-block">
+                    <dt class="milli">Wed</dt>
+                    <dd class="push-1-4 mega">7°</dd>
+                    </div>
+                    <div class="inline-block">
+                    <dt class="milli">Thurs</dt>
+                    <dd class="push-1-4 mega">8°</dd>
+                    </div>
+                    <div class="inline-block">
+                    <dt class="milli">Fri</dt>
+                    <dd class="push-1-4 mega">7°</dd>
+                    </div>
+                    <div class="inline-block">
+                    <dt class="milli">Sat</dt>
+                    <dd class="push-1-4 mega">7°</dd>
+                    </div>
                   </div>
+
+                  </dl>
+                </div>
+                  <i class="icon i-48 unit xs-1 s-1 m-1-4 l-1-4">
+                    <img class="right-arrow" src="images/arrow.svg" alt="">
+                  </i>
                 </div>
               </div>
             </div>
