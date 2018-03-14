@@ -24,6 +24,7 @@ html {
 .search-term:focus {
   background-color: #fff;
   color: #000;
+  transition: 0.25s;
 }
 
 .wrap{

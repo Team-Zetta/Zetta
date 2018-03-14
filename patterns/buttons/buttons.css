@@ -4,6 +4,7 @@
   border: .5px solid transparent;
   background-color: transparent;
   margin: none;
+  transition: 0.25s;
 }
 
 .btn-temp:focus {
@@ -19,6 +20,7 @@
   display: inline-block;
   border-radius: 25px;
   overflow: hidden;
+  transition: 0.25s;
 }
 
 .btn-left {
@@ -32,6 +34,7 @@
   border: .5px solid #fff;
   margin: none;
   border-radius: 0;
+  transition: 0.25s;
 }
 
 .btn-right {
@@ -45,6 +48,7 @@
   border: .5px solid #fff;
   margin: none;
   border-radius: 0;
+  transition: 0.25s;
 }
 
 .header-large {
