@@ -7,6 +7,10 @@
   transition: 0.25s;
 }
 
+.btn-temp {
+  font-weight: 400;
+}
+
 .btn-temp:focus {
   background-color: none;
   border: none;
@@ -52,15 +56,23 @@
 }
 
 .header-large {
-  width: 70%;
-  padding-right: 16em;
-  padding-left: 16em;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-right: 14em;
+  padding-left: 14em;
+  padding-top: .4em;
+  padding-bottom: .4em;
   border-radius: 25px;
   color: #000;
   background-color: #fff;
   border: .5px solid #fff;
   margin: none;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .header-large {
+    padding-right: 16em;
+    padding-left: 16em;
+  }
+
 }
